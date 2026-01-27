@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Akun All Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- BANNER ATAS (VIDEO AUTO GANTI) -->
+  <div class="banner video-banner">
+    <video id="bannerVideo" autoplay muted playsinline></video>
+    <button id="muteBtn" class="mute-btn">🔇</button>
+  </div>
+
+  <div class="page-title">🛍️ Akun All Premium SHOP NAXAS</div>
+
+  <div class="container">
+
+
+<!-- 1 CAPCUT -->
+<div class="product-card" data-name="CapCut Pro Private" data-price="14000"
+style="background-image:url('capcut.png');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo capcut.png"></div>
+    <div class="product-info">
+      <div class="product-name">CapCut Pro Private</div>
+      <div class="product-desc">29–35 Hari • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 19.000</div><div class="price-new">Rp 14.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 2 SPOTIFY 1 BULAN -->
+<div class="product-card" data-name="Spotify Premium 1 Bulan" data-price="16000"
+style="background-image:url('spotify.png');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo spotify.png"></div>
+    <div class="product-info">
+      <div class="product-name">Spotify Premium</div>
+      <div class="product-desc">1 Bulan • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 21.000</div><div class="price-new">Rp 16.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 3 SPOTIFY 2 BULAN -->
+<div class="product-card" data-name="Spotify Premium 2 Bulan" data-price="30000"
+style="background-image:url('spotify.png');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo spotify.png"></div>
+    <div class="product-info">
+      <div class="product-name">Spotify Premium</div>
+      <div class="product-desc">2 Bulan • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 36.000</div><div class="price-new">Rp 30.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 4 ALIGHT MOTION -->
+<div class="product-card" data-name="Alight Motion Premium" data-price="5000"
+style="background-image:url('alightmotion.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo alightmotion.jpg"></div>
+    <div class="product-info">
+      <div class="product-name">Alight Motion Premium</div>
+      <div class="product-desc">1 Tahun • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 10.000</div><div class="price-new">Rp 5.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 5 YOUTUBE + MUSIC -->
+<div class="product-card" data-name="YouTube + Music" data-price="5000"
+style="background-image:url('yutube.png');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo yutube.png"></div>
+    <div class="product-info">
+      <div class="product-name">YouTube + YT Music</div>
+      <div class="product-desc">1 Bulan • No Ads</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 9.000</div><div class="price-new">Rp 5.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 6 YOUTUBE HEAD -->
+<div class="product-card" data-name="YouTube Premium Head" data-price="6000"
+style="background-image:url('yutube.png');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo yutube.png"></div>
+    <div class="product-info">
+      <div class="product-name">YouTube Premium Head</div>
+      <div class="product-desc">Invite Max 5 • Admin +2k</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 8.000</div><div class="price-new">Rp 6.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 7 CANVA -->
+<div class="product-card" data-name="Canva Pro Invite" data-price="6000"
+style="background-image:url('canva.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo canva.jpg"></div>
+    <div class="product-info">
+      <div class="product-name">Canva Pro</div>
+      <div class="product-desc">1 Bulan • Invite</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+    <div class="price-new">Rp 6.000</div>
+  </div>
+</div>
+
+<!-- 8 VIU -->
+<div class="product-card" data-name="Viu Premium" data-price="6000"
+style="background-image:url('viiu.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo viu.png"></div>
+    <div class="product-info">
+      <div class="product-name">Viu Premium</div>
+      <div class="product-desc">1 Tahun • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 8.000</div><div class="price-new">Rp 6.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 9 BSTATION -->
+<div class="product-card" data-name="Bstation Premium" data-price="11000"
+style="background-image:url('bstation.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo bstation.jpg"></div>
+    <div class="product-info">
+      <div class="product-name">Bstation Premium</div>
+      <div class="product-desc">1 Tahun • Sharing</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 13.000</div><div class="price-new">Rp 11.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 10 PICSART -->
+<div class="product-card" data-name="PicsArt Pro" data-price="4000"
+style="background-image:url('picsart.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo picsart.jpg"></div>
+    <div class="product-info">
+      <div class="product-name">PicsArt Pro</div>
+      <div class="product-desc">1 Bulan • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 6.000</div><div class="price-new">Rp 4.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 11 APPLE MUSIC -->
+<div class="product-card" data-name="Apple Music" data-price="4000"
+style="background-image:url('applemusic.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo apple music.png"></div>
+    <div class="product-info">
+      <div class="product-name">Apple Music</div>
+      <div class="product-desc">1 Bulan • Invite</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 6.000</div><div class="price-new">Rp 4.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 12 AI GEMINI 1 BULAN -->
+<div class="product-card" data-name="AI Gemini 1 Bulan" data-price="5000"
+style="background-image:url('gemini.png');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo ai gemini.jpg"></div>
+    <div class="product-info">
+      <div class="product-name">AI Gemini</div>
+      <div class="product-desc">1 Bulan • Invite</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 7.000</div><div class="price-new">Rp 5.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 13 DUOLINGO -->
+<div class="product-card" data-name="Duolingo Super" data-price="3000"
+style="background-image:url('duolingo.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo duolingo.png"></div>
+    <div class="product-info">
+      <div class="product-name">Duolingo Super</div>
+      <div class="product-desc">7 Hari • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 8.000</div><div class="price-new">Rp 3.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 14 CHATGPT PLUS -->
+<div class="product-card" data-name="ChatGPT Plus" data-price="9000"
+style="background-image:url('chatgpt.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo gpt.png"></div>
+    <div class="product-info">
+      <div class="product-name">ChatGPT Plus</div>
+      <div class="product-desc">1 Bulan • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 13.000</div><div class="price-new">Rp 9.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 15 CHATGPT GO -->
+<div class="product-card" data-name="ChatGPT Go" data-price="9000"
+style="background-image:url('chatgpt.jpg');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo gpt.png"></div>
+    <div class="product-info">
+      <div class="product-name">ChatGPT Go</div>
+      <div class="product-desc">1 Tahun • Full Garansi</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 11.000</div><div class="price-new">Rp 9.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+<!-- 16 AI GEMINI 1 TAHUN -->
+<div class="product-card" data-name="AI Gemini 1 Tahun" data-price="9000"
+style="background-image:url('gemini.png');">
+  <div class="product-left">
+    <div class="product-thumb"><img src="logo ai gemini.jpg"></div>
+    <div class="product-info">
+      <div class="product-name">AI Gemini</div>
+      <div class="product-desc">1 Tahun • Invite</div>
+    </div>
+  </div>
+  <div class="product-action">
+    <div><div class="price-old">Rp 11.000</div><div class="price-new">Rp 9.000</div></div>
+    <button class="product-btn" onclick="toggleOrder(this)">Order</button>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<!-- FLOATING TOTAL + BUTTON -->
+<div class="fab-wrap">
+  <div id="floatingTotal" class="floating-total">Total: Rp 0</div>
+
+  <div class="fab-row">
+    <a href="#" class="back-btn">⬅ Back</a>
+    <div class="cart-btn" onclick="openCart()">🛒 Keranjang</div>
+  </div>
+</div>
+
+<!-- CART MODAL -->
+<div class="modal" id="cartModal">
+  <div class="modal-box">
+    <h3 style="text-align:center">🧾 RINGKASAN ORDER</h3>
+
+    <div id="cartList"></div>
+
+    <div class="total-in-cart" id="totalHarga">
+      Total: Rp 0
+    </div>
+
+    <div class="pay-admin" onclick="openPay()">MY PAY ADMIN</div>
+    <div class="order-now" onclick="pesanWA()">PESAN SEKARANG</div>
+    <div class="close" onclick="closeCart()">Tutup</div>
+  </div>
+</div>
+
+<!-- PAY MODAL -->
+<div class="modal" id="payModal">
+  <div class="modal-box">
+    <h3 style="text-align:center;margin-bottom:15px;">💳 PEMBAYARAN QRIS</h3>
+
+    <div class="qris-box">
+      <img src="qris.png" alt="QRIS">
+    </div>
+
+    <div class="pay-info">
+      <p>DANA / GOPAY / OVO</p>
+      <div class="pay-number">0818-0973-0331</div>
+    </div>
+
+    <div class="close" onclick="closePayWithNotice()">Kembali & Selesai</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

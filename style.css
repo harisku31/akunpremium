@@ -1,0 +1,331 @@
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  background:linear-gradient(180deg,#4facfe,#00c6fb);
+  color:#fff;
+}
+
+body.modal-open{
+  overflow:hidden;
+}
+
+.app{
+  max-width:420px;
+  margin:auto;
+  min-height:100vh;
+  padding-bottom:140px;
+}
+
+/* BANNER */
+.banner{
+  margin:14px;
+  height:140px;
+  border-radius:16px;
+  overflow:hidden;
+  background:#000;
+  position:relative;
+}
+
+/* BANNER IMAGE */
+.banner img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* BANNER VIDEO */
+.banner video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  z-index:1;
+}
+
+/* TOMBOL MUTE */
+.mute-btn{
+  position:absolute;
+  right:10px;
+  bottom:10px;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
+  border:none;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  font-size:16px;
+  cursor:pointer;
+  z-index:2;
+}
+
+
+/* TITLE */
+.page-title{
+  text-align:center;
+  font-weight:800;
+  margin:18px 0;
+  font-size:22px;
+}
+
+/* LIST */
+.container{
+  padding:0 14px;
+}
+
+/* PRODUCT CARD */
+.product-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:16px 12px;
+  margin-bottom:12px;
+  border-radius:16px;
+  border:2px solid gold;
+  position:relative;
+  background-size:cover;
+  background-position:center;
+  overflow:hidden;
+  transition:border-color .2s ease;
+}
+
+/* overlay biar teks kebaca */
+.product-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(12, 0, 0, 0.35);
+  z-index:0;
+}
+
+/* AKTIF + ANIMASI */
+.product-card.active{
+  border-color:#2EFF7A;
+  animation:greenPulse .6s ease-out;
+}
+
+/* LEFT */
+.product-left{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex:1;
+  position:relative;
+  z-index:1;
+}
+
+/* THUMB */
+.product-thumb{
+  width:52px;
+  height:52px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#222;
+  border:2px solid rgba(255,255,255,.4);
+  flex-shrink:0;
+}
+.product-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* INFO */
+.product-info{
+  display:flex;
+  flex-direction:column;
+}
+.product-name{
+  font-weight:700;
+  font-size:16px;
+}
+.product-desc{
+  font-size:11px;
+  opacity:.9;
+}
+
+/* ACTION */
+.product-action{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  position:relative;
+  z-index:1;
+}
+
+/* PRICE */
+.price-old{
+  font-size:11px;
+  color:#ddd;
+  text-decoration:line-through;
+}
+.price-new{
+  font-weight:800;
+  font-size:15px;
+  color:#fff;
+}
+
+/* BUTTON */
+.product-btn{
+  padding:8px 18px;
+  border-radius:999px;
+  background:#ffd700;
+  border:none;
+  font-weight:700;
+  cursor:pointer;
+  transition:background .2s ease;
+}
+.product-card.active .product-btn{
+  background:#2EFF7A;
+  animation:greenPulse .6s ease-out;
+}
+
+/* FLOAT */
+.fab-wrap{
+  position:fixed;
+  bottom:16px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+  z-index:100;
+}
+
+/* TOTAL FLOAT */
+.floating-total{
+  background:#ff4757;
+  color:#fff;
+  padding:4px 12px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+  box-shadow:0 4px 10px rgba(0,0,0,.25);
+  display:none;
+}
+
+/* FAB BUTTONS */
+.fab-row{
+  display:flex;
+  gap:10px;
+}
+.back-btn,
+.cart-btn{
+  padding:14px 22px;
+  border-radius:999px;
+  font-weight:800;
+  text-decoration:none;
+  box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+.back-btn{
+  background:#ffffffcc;
+  color:#0077ff;
+}
+.cart-btn{
+  background:#fff;
+  color:#0077ff;
+  cursor:pointer;
+}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  display:none;
+  align-items:flex-end;
+  z-index:9999;
+}
+.modal-box{
+  background:#fff;
+  color:#000;
+  width:100%;
+  border-radius:24px 24px 0 0;
+  padding:20px;
+  animation:up .3s ease-out;
+}
+@keyframes up{
+  from{transform:translateY(100%)}
+  to{transform:translateY(0)}
+}
+
+/* CART */
+.cart-item{
+  display:flex;
+  justify-content:space-between;
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+}
+.total-in-cart{
+  font-weight:800;
+  margin:18px 0;
+  font-size:20px;
+  text-align:right;
+}
+
+/* ACTION BUTTONS */
+.pay-admin,
+.order-now{
+  padding:15px;
+  border-radius:14px;
+  font-weight:800;
+  text-align:center;
+  cursor:pointer;
+  margin-top:10px;
+}
+.pay-admin{ background:#ffd700; }
+.order-now{ background:#2EFF7A; }
+
+.close{
+  text-align:center;
+  margin-top:18px;
+  color:red;
+  cursor:pointer;
+  font-weight:700;
+}
+
+/* QRIS */
+.qris-box{
+  background:#f8f9fa;
+  border:2px dashed #bbb;
+  border-radius:16px;
+  padding:12px;
+  text-align:center;
+}
+.qris-box img{
+  width:100%;
+  max-width:260px;
+  border-radius:8px;
+}
+.pay-info{
+  text-align:center;
+  margin-top:15px;
+  padding:12px;
+  background:#eef6ff;
+  border-radius:14px;
+}
+.pay-number{
+  font-size:22px;
+  font-weight:800;
+  color:#0077ff;
+}
+
+/* ===== ANIMASI HIJAU ===== */
+@keyframes greenPulse{
+  0%{
+    box-shadow:0 0 0 0 rgba(46,255,122,.8);
+  }
+  70%{
+    box-shadow:0 0 0 10px rgba(46,255,122,0);
+  }
+  100%{
+    box-shadow:0 0 0 0 rgba(46,255,122,0);
+  }
+}
